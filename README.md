@@ -1,2 +1,2 @@
-# pharmaceutics_MZB_analogs
-Codes employed for publishing an article in MDPI: Pharmaceutics
+# ijms_MZB_analogs
+Codes employed for publishing an article in MDPI: IJMS
