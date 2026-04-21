@@ -6,7 +6,7 @@ Morgan Fingerprints (ECFP4)
 FP2 (Path-based) Fingerprints
 Tanimoto Similarity
 
-📂 **Repository Structure**
+**1. Repository Structure**
 .
 ├── fingerprint_similarity.py
 ├── FP2_similarity_heatmap.py
@@ -14,7 +14,7 @@ Tanimoto Similarity
 ├── *.sdf
 └── README.md
 
-⚙️ **Requirements**
+**2. Requirements**
 Install dependencies using conda (recommended):
 
 conda create -n chem_similarity python=3.10
@@ -24,14 +24,14 @@ conda install -c conda-forge rdkit pandas matplotlib seaborn
 Or via pip (if RDKit is already installed):
 pip install pandas matplotlib seaborn
 
-📥 **Input Data**
+**3. Input Data**
 Place all .sdf files in the same directory as the scripts.
 Each .sdf file should contain one molecule.
 The native reference ligand must be named:
 MZB.sdf
 
-**Scripts Overview**
-1. fingerprint_similarity.py
+**4. Scripts Overview**
+**4.1. fingerprint_similarity.py**
 Purpose:
 Compute similarity of all ligands against native MZB
 Compare Morgan vs FP2
@@ -44,7 +44,7 @@ Bar plot (Morgan vs FP2 similarity)
 Run:
 python fingerprint_similarity.py
 
-2. FP2_similarity_heatmap.py
+**4.2. FP2_similarity_heatmap.py**
 Purpose:
 Compute pairwise similarity between all ligands
 Use FP2 (path-based fingerprint)
@@ -54,7 +54,7 @@ Clustered similarity heatmap (FP2)
 Run:
 python FP2_similarity_heatmap.py
 
-3. Morgan_similarity_heatmap.py
+**4.3. Morgan_similarity_heatmap.py**
 Purpose:
 Compute pairwise similarity between all ligands
 Use Morgan fingerprints (ECFP4-like)
@@ -64,23 +64,24 @@ Clustered similarity heatmap (Morgan)
 Run:
 python Morgan_similarity_heatmap.py
 
-**Methodology**
+**5. Methodology**
 **Fingerprints Used**
-**Morgan Fingerprint (ECFP4)**
+**5.1. Morgan Fingerprint (ECFP4)**
 Radius: 2
 Bit size: 1024
 Captures circular substructures
-**FP2 Fingerprint**
+
+**5.2. FP2 Fingerprint**
 Path-based
 Encodes linear fragments
 
 **Similarity Metric**
-**Tanimoto Similarity**
+**5.3. Tanimoto Similarity**
 T(A,B)=
 A∪B
 A∩B
 	​
-**Output Interpretation**
+**6. Output Interpretation**
 **Similarity score range: 0 → 1**
 1.0 → identical structures
 > 0.85 → highly similar
@@ -90,7 +91,7 @@ A∩B
 Clustering reveals structural grouping of analogs
 Useful for SAR and lead optimization
 
-⚠️ **Notes**
+**7. Notes**
 Only the first molecule in each .sdf file is used.
 Ensure all structures are:
 Valid
