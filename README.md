@@ -65,16 +65,17 @@ Run:
 python Morgan_similarity_heatmap.py
 
 **Methodology**
-Fingerprints Used
-Morgan Fingerprint (ECFP4)
+**Fingerprints Used**
+**Morgan Fingerprint (ECFP4)**
 Radius: 2
 Bit size: 1024
 Captures circular substructures
-FP2 Fingerprint
+**FP2 Fingerprint**
 Path-based
 Encodes linear fragments
-Similarity Metric
-Tanimoto Similarity
+
+**Similarity Metric**
+**Tanimoto Similarity**
 T(A,B)=
 A∪B
 A∩B
