@@ -1,4 +1,4 @@
-**FP2-and-Morgan-Fingerprint-Similarity-for-Ligand-Analogs**
+**FP2-and-Morgan-fingerprint-similarity-for-ligand-analogs**
 
 This repository provides Python scripts for calculating and visualizing chemical similarity between ligand analogs using RDKit. The workflow focuses on comparing compounds against a native ligand (MZB) using:
 
